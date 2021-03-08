@@ -1,0 +1,269 @@
+$background-dark:#001529;
+$color:#8a95a0;
+$color-hover:#fff;
+
+@mixin menu-icon {
+  margin-right: 5px;
+  width: 24px;
+  text-align: center;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+@mixin clear {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.iconfont {
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .28s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-leave-active,
+.fade-enter-active {
+  transition: all .28s;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+// 头部
+.navbar {
+  background: #00284d;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .28);
+  padding: 0 18px !important;
+  z-index: 2;
+}
+
+// 侧边
+.sidebar {
+  background: $background-dark;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, .28);
+  transition: width .3s;
+  z-index: 1;
+
+  &--collapse {
+    .aside-con__title {
+      width: 0 !important;
+    }
+
+    .aside-con__fold {
+      right: 20px !important;
+    }
+  }
+
+  .aside {
+    height: 100%;
+    color: #fff;
+    user-select: none;
+    overflow: hidden;
+
+    &-con {
+      padding: 22px 24px 12px;
+      font-size: 18px;
+      line-height: 1;
+      position: relative;
+
+      &__title {
+        display: inline-block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: width .3s;
+      }
+
+      &__fold {
+        position: absolute;
+        right: 15px;
+        cursor: pointer;
+        @include menu-icon;
+        margin-right: 0;
+      }
+
+      &:after {
+        @include clear;
+      }
+    }
+
+    .el-scrollbar {
+      height: 100%;
+
+      &__wrap {
+        overflow-x: hidden;
+      }
+
+      &__bar.is-horizontal {
+        display: none;
+      }
+    }
+
+    .el-menu {
+      width: 100%;
+      background: $background-dark;
+      border-right: none;
+
+      &:not(.el-menu--collapse) {
+        width: 256px;
+      }
+
+      &-item {
+        color: $color;
+        height: 50px;
+        line-height: 50px;
+
+        i {
+          color: inherit;
+        }
+
+        .iconfont {
+          @include menu-icon;
+        }
+
+        * {
+          vertical-align: top;
+        }
+
+        &.is-active,
+        &:focus {
+          background: #0079fb;
+          color: $color-hover;
+
+          &:hover {
+            background: #0079fb;
+          }
+        }
+
+        &:hover {
+          background: transparent;
+          color: $color-hover;
+        }
+      }
+    }
+
+    .el-submenu {
+      &:not(.is-active) {
+        color: $color;
+      }
+
+      color: $color-hover;
+
+      &__title {
+        color: inherit;
+        height: 50px;
+        line-height: 50px;
+
+        i {
+          color: inherit;
+        }
+
+        &:hover {
+          background: transparent;
+          color: $color-hover;
+        }
+      }
+
+      .el-menu {
+        background: #11192e;
+        box-shadow: inset 0 2px 8px rgba(0, 0, 0, .45);
+        padding: 0;
+
+        &-item {
+          height: 40px;
+          line-height: 40px;
+          margin: 4px 0;
+          padding: 0 52px !important;
+        }
+      }
+
+      .iconfont {
+        @include menu-icon;
+      }
+    }
+  }
+}
+
+// 内容
+.app-main {
+  z-index: 0;
+  padding: 0 !important;
+  display: flex;
+  flex-flow: column;
+  overflow-x: hidden;
+
+  &-content {
+    width: 100%;
+    flex: 1;
+    align-self: flex-start;
+    flex-flow: column;
+  }
+
+  &-footer {
+    align-items: flex-end;
+  }
+}
+
+
+.logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  float: left;
+  margin: 16px 0;
+
+  img {
+    height: 32px;
+    margin-right: 8px;
+    vertical-align: top;
+  }
+}
+
+.tools {
+  float: right;
+
+  &-item {
+    display: inline-block;
+    height: 64px;
+    line-height: 64px;
+    color: #fff;
+    margin: 0 12px;
+    vertical-align: top;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0, 0, 0, .145);
+    }
+  }
+
+  &-divider {
+    display: inline-block;
+    width: 1px;
+    height: 32px;
+    background: rgba(0, 121, 251, .24);
+    margin-top: 18px;
+  }
+}

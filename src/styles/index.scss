@@ -1,0 +1,86 @@
+@import './common.scss';
+//@import './iconfont/iconfont.css';
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.screen-wrapper {
+  position: relative;
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.icon-background {
+  width: 58px;
+  height: 66px;
+  //background: url("../assets/home.png") no-repeat -119px -2px;
+
+  img {
+    display: block;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.el-form-item__tip {
+  color: #C0C4CC;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.icon-column-pk {
+  color: rgb(255, 204, 51)
+}
+
+.iconfont {
+  font-size: 14px;
+}
+
+.result {
+  max-width: 560px;
+  width: 72%;
+  margin: 0 auto;
+  text-align: center;
+
+  &-icon i {
+    font-size: 96px;
+    color: #52c41a;
+  }
+
+  &-title {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &-content {
+    margin-bottom: 24px;
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .el-form {
+    padding: 24px 40px 16px;
+    text-align: left;
+    background: #fafafa;
+    border-radius: 2px;
+  }
+}

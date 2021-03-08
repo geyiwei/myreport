@@ -1,0 +1,365 @@
+[{
+  "id": "1",
+  "title": "数据共享管理",
+  "children": [{
+    "id": "1-1",
+    "title": "控制台",
+    "url": "/dashboard"
+  },
+    {
+      "id": "1-2",
+      "title": "标准规范管理",
+      "url": "/specification",
+      "icon": "iconfont icon-journal",
+      "children": [{
+        "id": "12-1",
+        "title": "数据字典管理",
+        "url": "/specification/dictionary"
+      },
+        {
+          "id": "12-2",
+          "title": "数据元管理",
+          "url": "/specification/data-source"
+        },
+        {
+          "id": "12-3",
+          "title": "数据标准管理",
+          "url": "/specification/standard"
+        }
+      ]
+    },
+    {
+      "id": "1-3",
+      "title": "注册管理",
+      "url": "/register",
+      "icon": "iconfont icon-resource",
+      "children": [{
+        "id": "13-1",
+        "title": "数据源注册",
+        "url": "/register/source"
+      },
+        {
+          "id": "13-2",
+          "title": "服务注册",
+          "url": "/register/resource"
+        },
+        {
+          "id": "13-3",
+          "title": "请求方注册",
+          "url": "/register/app"
+        }
+      ]
+    },
+    {
+      "id": "1-4",
+      "title": "发布管理",
+      "url": "/publish",
+      "icon": "iconfont icon-release",
+      "children": [{
+        "id": "14-1",
+        "title": "前段码管理",
+        "url": "/catalog/code"
+      },
+        {
+          "id": "14-2",
+          "title": "资源编目",
+          "url": "/publish/resourceCatalog"
+        },
+        {
+          "id": "14-3",
+          "title": "编目审核",
+          "url": "/publish/examine"
+        },
+        {
+          "id": "14-4",
+          "title": "资源发布",
+          "url": "/publish/mine"
+        },
+        {
+          "id": "14-5",
+          "title": "资源更新",
+          "url": "/publish/resourceUpdate"
+        }
+      ]
+    },
+    {
+      "id": "1-5",
+      "title": "订阅管理",
+      "url": "/subscribe",
+      "icon": "iconfont icon-subscription",
+      "children": [{
+        "id": "15-1",
+        "title": "平台初审",
+        "url": "/subscribe/platform"
+      },
+        {
+          "id": "15-2",
+          "title": "订阅审批",
+          "url": "/subscribe/approve"
+        },
+        {
+          "id": "15-3",
+          "title": "我订阅的资源（资源订阅）",
+          "url": "/subscribe/subscribed"
+        },
+        {
+          "id": "15-4",
+          "title": "我收藏的资源（去除，门户展示）",
+          "url": "/subscribe/collect"
+        }
+      ]
+    },
+    {
+      "id": "1-6",
+      "title": "需求管理",
+      "url": "/demand",
+      "icon": "iconfont icon-demand",
+      "children": [{
+        "id": "16-1",
+        "title": "平台初审",
+        "url": "/demand/inspection"
+      },
+        {
+          "id": "16-2",
+          "title": "需求受理",
+          "url": "/demand/acceptance"
+        },
+        {
+          "id": "16-3",
+          "title": "我提出的需求(需求发布)",
+          "url": "/demand/propose"
+        }
+      ]
+    },
+    {
+      "id": "1-7",
+      "title": "平台监控",
+      "url": "/monitoring",
+      "icon": "iconfont icon-jurisdiction",
+      "children": [{
+        "id": "17-1",
+        "title": "前置库监控",
+        "url": "/monitoring/frontLibrary"
+      },
+        {
+          "id": "17-2",
+          "title": "任务监控",
+          "url": "/monitoring/task"
+        },
+        {
+          "id": "17-3",
+          "title": "API服务监控",
+          "url": "/monitoring/serve"
+        },
+        {
+          "id": "17-4",
+          "title": "微应用监控",
+          "url": "/monitoring/microApplication"
+        }
+      ]
+    },
+    {
+      "id": "1-8",
+      "title": "数据申请",
+      "url": "/dataApply",
+      "icon": "iconfont icon-caiji"
+    },
+    {
+      "id": "1-9",
+      "title": "基础资源库管理",
+      "url": "/library",
+      "icon": "iconfont icon-dashboard",
+      "children": [{
+        "id": "19-1",
+        "title": "资源库管理",
+        "url": "/library/resource"
+      }]
+    }
+  ]
+},
+  {
+    "id": "2",
+    "title": "平台管理",
+    "children": [{
+      "id": "2-1",
+      "title": "网站管理",
+      "url": "/website",
+      "icon": "iconfont icon-website",
+      "children": [{
+        "id": "21-1",
+        "title": "系统字典管理",
+        "url": "/website/classify"
+      },
+        {
+          "id": "21-2",
+          "title": "推荐管理",
+          "url": "/website/rescommend"
+        },
+        {
+          "id": "21-3",
+          "title": "评论管理",
+          "url": "/website/assessment"
+        },
+        {
+          "id": "21-4",
+          "title": "协议管理",
+          "url": "/website/escapeProtocol"
+        },
+        {
+          "id": "21-5",
+          "title": "公众用户管理",
+          "url": "/website/publicUsers"
+        },
+        {
+          "id": "21-6",
+          "title": "开放应用管理",
+          "url": "/website/openapp"
+        }
+      ]
+    },
+      {
+        "id": "2-2",
+        "title": "日志管理",
+        "url": "/log",
+        "icon": "iconfont icon-journal",
+        "children": [{
+          "id": "22-1",
+          "title": "平台操作日志",
+          "url": "/log/operation"
+        },
+          {
+            "id": "22-2",
+            "title": "数据交换日志",
+            "url": "/log/exchange"
+          },
+          {
+            "id": "22-3",
+            "title": "API服务日志",
+            "url": "/log/api"
+          },
+          {
+            "id": "22-4",
+            "title": "微应用访问日志",
+            "url": "/log/microApplication"
+          }
+        ]
+      },
+      {
+        "id": "2-3",
+        "title": "权限管理",
+        "url": "/power",
+        "icon": "iconfont icon-jurisdiction",
+        "children": [{
+          "id": "23-1",
+          "title": "组织机构管理",
+          "url": "/power/organize"
+        },
+          {
+            "id": "23-2",
+            "title": "角色管理",
+            "url": "/power/role"
+          },
+          {
+            "id": "23-3",
+            "title": "用户组管理",
+            "url": "/power/group"
+          },
+          {
+            "id": "23-4",
+            "title": "用户管理",
+            "url": "/power/user"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "运营分析",
+    "children": [{
+      "id": "3-1",
+      "title": "运营分析",
+      "url": "/analyze",
+      "icon": "iconfont icon-website",
+      "children": [{
+        "id": "3-1-1",
+        "title": "平台运行简报",
+        "url": "/analyze/report"
+      },
+        {
+          "id": "3-1-2",
+          "title": "平台使用量统计",
+          "url": "/analyze/usageStatistics"
+        },
+        {
+          "id": "3-1-3",
+          "title": "资源使用量统计",
+          "url": "/analyze/resource"
+        },
+        {
+          "id": "3-1-4",
+          "title": "问题数据统计",
+          "url": "/analyze/problemData"
+        },
+        {
+          "id": "3-1-5",
+          "title": "资源发布情况分析",
+          "url": "/analyze/resourcePublish"
+        },
+        {
+          "id": "3-1-6",
+          "title": "部门订阅情况分析",
+          "url": "/analyze/departmentSubscribe"
+        },
+        {
+          "id": "3-1-7",
+          "title": "前置库更新情况分析",
+          "url":"/analyze/frontlib"
+        },
+        {
+          "id": "3-1-8",
+          "title": "部门更新情况分析",
+          "url":"/analyze/departmentUpdate"
+        },
+        {
+          "id": "3-1-9",
+          "title": "需求受理情况分析",
+          "url":"/analyze/demandAccept"
+        },
+        {
+          "id": "3-1-10",
+          "title": "部门审批情况分析",
+          "url":"/analyze/departmentApprove"
+        },
+        {
+          "id": "3-1-11",
+          "title": "共享库资源情况分析"
+        }
+
+      ]
+    }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "资源库管理",
+    "children": [{
+      "id": "4-1",
+      "title": "资源库管理",
+      "url": "/resourcelib",
+      "icon": "iconfont icon-website",
+      "children": [{
+        "id": "4-1-1",
+        "title": "共享库管理",
+        "url": "/resourcelib/sharelib"
+      },
+        {
+          "id": "4-1-2",
+          "title": "问题库管理",
+          "url": "/resourcelib/problemlib"
+        }
+      ]
+    }
+    ]
+  }
+]
